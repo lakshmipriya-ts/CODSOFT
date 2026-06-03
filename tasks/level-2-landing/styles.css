@@ -1,0 +1,16 @@
+/* styles.css — Level 2 landing page */
+:root{--accent:#ff6b6b;--bg:#f8fafc;--muted:#6b7280;--max:1000px}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:var(--bg);color:#111}
+.container{max-width:var(--max);margin:0 auto;padding:2rem}
+.hero{background:white;padding:3rem 0;border-bottom:1px solid #eee}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.nav-links a{margin-left:1rem;text-decoration:none;color:#111}
+.hero-content{margin-top:2rem}
+.hero-content h2{font-size:2rem;margin:0 0 .5rem}
+.cta{display:inline-block;background:var(--accent);color:white;padding:.6rem 1rem;border-radius:6px;text-decoration:none}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.feature{background:white;padding:1rem;border-radius:8px;text-align:center}
+.pricing-grid{display:flex;gap:1rem;margin-top:1rem}
+.card{flex:1;background:white;padding:1rem;border-radius:8px;text-align:center}
+@media(max-width:800px){.features-grid{grid-template-columns:1fr}.pricing-grid{flex-direction:column}}
