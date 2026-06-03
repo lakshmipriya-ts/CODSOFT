@@ -6,4 +6,3 @@ A simple calculator built with HTML, CSS, and JavaScript. Files:
 - styles.css
 - script.js
 
-Open tasks/level-3-calculator/index.html in a browser to use the calculator.
