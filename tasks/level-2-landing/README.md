@@ -1,4 +1,4 @@
-# Level 2 — Landing Page
+# Level 1-task-2 — Landing Page
 
 A simple responsive landing page example. Files:
 
