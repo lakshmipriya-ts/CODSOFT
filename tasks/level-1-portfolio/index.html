@@ -4,28 +4,66 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lakshmipriya T S | Portfolio</title>
+  <meta name="description" content="Lakshmipriya T S — Computer Science student building responsive websites. Projects in HTML & CSS; learning React and JavaScript." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Lakshmipriya T S — Portfolio" />
+  <meta property="og:description" content="Computer Science student and web developer — portfolio of projects using HTML, CSS, and React (learning)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/lakshmipriya-ts/CODSOFT/tree/main/tasks/level-1-portfolio/" />
+  <meta property="og:image" content="/tasks/level-1-portfolio/portfolio-project.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Minimal accessibility helpers (can be moved to styles.css) */
+    .skip-link { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { left: 1rem; top: 1rem; width: auto; height: auto; background: white; padding: .5rem; z-index: 9999; }
+    :focus { outline: 3px solid #095; outline-offset: 3px; }
+    .header-inner { display:flex; align-items:center; gap:1rem; justify-content:space-between; }
+    nav ul { list-style:none; display:flex; gap:1rem; padding:0; margin:0; }
+    nav a { text-decoration:none; }
+  </style>
 </head>
 
 <body>
 
-  <header id="header">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header id="header" role="banner">
     <div class="container header-inner">
-      <h1 class="logo">Lakshmipriya T S</h1>
-      <p class="tagline">
-        Computer Science Student • Web Development Enthusiast • React Learner
-      </p>
+      <div>
+        <h1 class="logo">Lakshmipriya T S</h1>
+        <p class="tagline">Computer Science Student • Web Development Enthusiast • React Learner</p>
+      </div>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="main" class="container" role="main">
 
     <!-- ABOUT -->
     <section id="about">
       <h2>About Me</h2>
 
       <div class="about-grid">
-        <img src="profile.jpg" alt="Lakshmipriya Profile Photo" class="profile-img">
+        <img src="profile.jpg" alt="Lakshmipriya — profile photo" class="profile-img" width="300" height="300" loading="lazy">
 
         <div>
           <p>
@@ -66,7 +104,7 @@
         <li>HTML5</li>
         <li>CSS3</li>
         <li>Responsive Web Design</li>
-        <li>Git & GitHub</li>
+        <li>Git &amp; GitHub</li>
         <li>React (Learning)</li>
         <li>JavaScript (Learning)</li>
         <li>Data Analytics Basics</li>
@@ -81,7 +119,10 @@
       <div class="projects-grid">
 
         <article class="project-card">
-          <img src="portfolio-project.png" alt="Portfolio Project">
+          <figure>
+            <img src="portfolio-project.png" alt="Screenshot of the personal portfolio homepage (responsive)" width="1200" height="800" loading="lazy">
+            <figcaption>Personal Portfolio — responsive homepage</figcaption>
+          </figure>
 
           <h3>Personal Portfolio Website</h3>
 
@@ -89,10 +130,19 @@
             Developed a responsive portfolio website using HTML and CSS
             to showcase skills, education, and projects.
           </p>
+
+          <p class="project-meta">Tech: HTML • CSS • Responsive Design</p>
+          <p>
+            <a href="https://lakshmipriya-ts.github.io/CODSOFT/tasks/level-1-portfolio/" target="_blank" rel="noopener noreferrer">Live demo</a> •
+            <a href="https://github.com/lakshmipriya-ts/CODSOFT" target="_blank" rel="noopener noreferrer">Source</a>
+          </p>
         </article>
 
         <article class="project-card">
-          <img src="react-project.png" alt="React Project">
+          <figure>
+            <img src="react-project.png" alt="Screenshot of a React learning project" width="1200" height="800" loading="lazy">
+            <figcaption>React learning project — component examples</figcaption>
+          </figure>
 
           <h3>React Learning Project</h3>
 
@@ -100,16 +150,31 @@
             Built beginner React applications while learning component-based
             development through practical exercises.
           </p>
+
+          <p class="project-meta">Tech: React • JSX • Component-based UI</p>
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a> •
+            <a href="https://github.com/lakshmipriya-ts" target="_blank" rel="noopener noreferrer">Source</a>
+          </p>
         </article>
 
         <article class="project-card">
-          <img src="github-project.png" alt="GitHub Project">
+          <figure>
+            <img src="github-project.png" alt="Screenshot showing Git & GitHub workflow examples" width="1200" height="800" loading="lazy">
+            <figcaption>Git & GitHub practice project</figcaption>
+          </figure>
 
-          <h3>Git & GitHub Practice Project</h3>
+          <h3>Git &amp; GitHub Practice Project</h3>
 
           <p>
             Worked with repositories, branching, pull requests, and version
             control workflows using Git and GitHub.
+          </p>
+
+          <p class="project-meta">Tech: Git • GitHub • Version Control</p>
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">Live demo</a> •
+            <a href="https://github.com/lakshmipriya-ts" target="_blank" rel="noopener noreferrer">Source</a>
           </p>
         </article>
 
@@ -118,10 +183,10 @@
 
     <!-- ACHIEVEMENTS -->
     <section id="achievements">
-      <h2>Achievements & Learning</h2>
+      <h2>Achievements &amp; Learning</h2>
 
       <ul>
-        <li>Completed HTML & CSS projects.</li>
+        <li>Completed HTML &amp; CSS projects.</li>
         <li>Learning React through Full Stack Open.</li>
         <li>Completed Git and GitHub hands-on exercises.</li>
         <li>Exploring Data Analytics and Big Data concepts.</li>
@@ -136,9 +201,7 @@
         Download my resume below:
       </p>
 
-      <a href="resume.pdf" download class="btn">
-        Download Resume
-      </a>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
     </section>
 
     <!-- CONTACT -->
@@ -147,23 +210,17 @@
 
       <p>
         Email:
-        <a href="mailto:lakshmipriya@example.com">
-          lakshmipriya@example.com
-        </a>
+        <a href="mailto:lakshmipriya@example.com">lakshmipriya@example.com</a>
       </p>
 
       <p>
         GitHub:
-        <a href="https://github.com/yourusername" target="_blank">
-          github.com/yourusername
-        </a>
+        <a href="https://github.com/lakshmipriya-ts" target="_blank" rel="noopener noreferrer">github.com/lakshmipriya-ts</a>
       </p>
 
       <p>
         LinkedIn:
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">
-          linkedin.com/in/yourprofile
-        </a>
+        <a href="https://linkedin.com/in/lakshmipriya-ts" target="_blank" rel="noopener noreferrer">linkedin.com/in/lakshmipriya-ts</a>
       </p>
     </section>
 
@@ -171,7 +228,7 @@
 
   <footer>
     <div class="container footer-inner">
-      <p>© 2026 Lakshmipriya T S. All Rights Reserved.</p>
+      <p>© 2026 Lakshmipriya T S. All Rights Reserved. — <a href="/privacy.html">Privacy</a></p>
     </div>
   </footer>
 
