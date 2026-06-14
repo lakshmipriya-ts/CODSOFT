@@ -1,6 +1,6 @@
 # CODSOFT — Internship Tasks
 
-This repository contains internship tasks for Lakshmipriya TS. The tasks are organized under the `tasks/` folder so each assignment is easy to find and review.
+This repository contains internship tasks . The tasks are organized under the `tasks/` folder so each assignment is easy to find and review.
 
 Structure
 
